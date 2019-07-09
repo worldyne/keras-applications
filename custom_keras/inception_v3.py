@@ -372,7 +372,7 @@ def InceptionV3(include_top=True,
     else:
         inputs = img_input
     # Create model.
-    model = models.Model(inputs, x, name='inception_v3')
+    model = models.Model(inputs, x)
 
     # Load weights.
     if weights == 'imagenet':
